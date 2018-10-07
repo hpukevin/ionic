@@ -2,16 +2,25 @@
   <ion-navbar>
     <ion-title>Home</ion-title>
   </ion-navbar>
+
+
+  <ion-toolbar>
+    <ion-title>Subheader</ion-title>
+  </ion-toolbar>
 </ion-header>
 
 <ion-content padding>
-  <h2>Welcome to Ionic!</h2>
-  <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
-  </p>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
+
+  <div style="text-align: center">
+    <h2>欢迎来到Ionic!</h2>
+    <button ion-button [navPush]="buttonPage">按钮控件</button>
+    <button ion-button [navPush]="listPage">列表控件</button>
+    <button ion-button [navPush]="cardPage">卡片控件</button>
+    <button ion-button [navPush]="inputPage" color="secondary">输入控件</button>
+    <button ion-button [navPush]="togglePage" color="secondary">开关控件</button>
+    <button ion-button [navPush]="rangePage" color="secondary">滚动控件</button>
+    <button ion-button [navPush]="selectPage" color="danger">选择控件</button>
+    <button ion-button [navPush]="testPage" color="secondary">test</button>
+  </div>
+
 </ion-content>

@@ -1,0 +1,54 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-searchbar placeholder="搜索"></ion-searchbar>
+  </ion-navbar>
+
+</ion-header>
+
+<!-- 官方文档参考地址 -->
+<!-- https://ionicframework.com/docs/components/#inputs -->
+<ion-content class="content-gray">
+  <!-- 普通输入框 -->
+  <ion-list>
+    <ion-item>
+      <ion-input type="text" placeholder="请输入账号"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input type="password" placeholder="请输入密码"></ion-input>
+    </ion-item>
+  </ion-list>
+
+  <!-- 带图标输入框 -->
+  <ion-list>
+    <ion-item>
+      <ion-icon name="person" item-start></ion-icon>
+      <ion-input type="text" placeholder="请输入账号"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-icon name="lock" item-start></ion-icon>
+      <ion-input type="password" placeholder="请输入密码"></ion-input>
+    </ion-item>
+  </ion-list>
+
+  <!-- 固定文字输入框 -->
+  <ion-list>
+    <ion-item>
+      <ion-label>左侧固定文字</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label stacked>上方固定文字</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+  </ion-list>
+
+  <!-- 带动画输入框 -->
+  <ion-list>
+    <ion-item>
+      <ion-label floating>动画效果</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+  </ion-list>
+
+</ion-content>
